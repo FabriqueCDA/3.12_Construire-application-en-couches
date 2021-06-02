@@ -3,7 +3,6 @@
 > Construire une application organisée en couches
 > Préparer et exécuter le déploiement d’une application
 
-
 Nous avons vu comment utiliser CloudFormation pour créer un serveur complet avec tous les services attachés.
 Le principe de CloudFormation est d'orchestrer tout un ensemble de services pour produire une infrastructure complète. Lors de la création d'une pile vous aurez remarqué les étapes se dérouler.
 Nous allons recréer ces différents services et les orchestrer à la main pour apprendre à manipuler AWS plus en détail.
@@ -31,7 +30,7 @@ Et voilà, l'instance se crée comme tout à l'heure. On a déjà utilisé des �
 ## On attache des adresses IP fixes
 La première sur une instance sera gratuite, les autres... pas chère mais facturées.
 Les adresses IP des instance sont réinitialisées à chaque redémarrage. Dans le processus réseau interne de AWS, elles sont en DHCP comme vos routeurs.
-Pour ce faire, rien de plus simple. Dans la page des instances EC2, sur le menu de gauche allez dans 'Adresses IP Electic', créez une adresse IP en choisissant Amazon.
+Pour ce faire, rien de plus simple. Dans la page des instances EC2, sur le menu de gauche allez dans 'Adresses IP Elastic', créez une adresse IP en choisissant Amazon.
 Une fois créée, sélectionnez là, 'Actions > Associer l'adresse IP Elactic'. Choisissez votre instance, l'adresse privé en lien et cochez la case 'Autoriser la réassociation de cette adresse IP Elastic'.
 Et voilà, c'est fait, vos instances ont des IP fixes, comme des grands.
 
